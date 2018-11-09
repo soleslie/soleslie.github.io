@@ -108,20 +108,30 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="leslie的博客">
-<meta property="og:url" content="https://soleslie.github.io/index.html">
+  <meta name="description" content="系统架构图 在线演示 运行环境 性能测试 缓存 热点微博 Reids 和 Memcache Redis 配置 实现 业务上的折中 序列化方式的选择   Feed 流 主从架构 主从复制 读写分离 主从复制配置   安全性 XSS 防御 Redis Crackit   交互设计 登录时异步修改用户头像 异步删帖     系统架构图     在线演示MBlog 用户名和密码都为 test。 运行环">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MBlog的实现">
+<meta property="og:url" content="https://soleslie.github.io/2018/11/08/MBlog的实现/index.html">
 <meta property="og:site_name" content="leslie的博客">
+<meta property="og:description" content="系统架构图 在线演示 运行环境 性能测试 缓存 热点微博 Reids 和 Memcache Redis 配置 实现 业务上的折中 序列化方式的选择   Feed 流 主从架构 主从复制 读写分离 主从复制配置   安全性 XSS 防御 Redis Crackit   交互设计 登录时异步修改用户头像 异步删帖     系统架构图     在线演示MBlog 用户名和密码都为 test。 运行环">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://soleslie.github.io/2018/11/08/MBlog的实现/pics/1.png">
+<meta property="og:image" content="https://soleslie.github.io/2018/11/08/MBlog的实现/pics/5.png">
+<meta property="og:image" content="https://soleslie.github.io/2018/11/08/MBlog的实现/pics/6.png">
+<meta property="og:image" content="https://soleslie.github.io/2018/11/08/MBlog的实现/pics/9.gif">
+<meta property="og:image" content="https://soleslie.github.io/2018/11/08/MBlog的实现/pics/10.gif">
+<meta property="og:updated_time" content="2018-11-08T07:18:55.980Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="leslie的博客">
+<meta name="twitter:title" content="MBlog的实现">
+<meta name="twitter:description" content="系统架构图 在线演示 运行环境 性能测试 缓存 热点微博 Reids 和 Memcache Redis 配置 实现 业务上的折中 序列化方式的选择   Feed 流 主从架构 主从复制 读写分离 主从复制配置   安全性 XSS 防御 Redis Crackit   交互设计 登录时异步修改用户头像 异步删帖     系统架构图     在线演示MBlog 用户名和密码都为 test。 运行环">
+<meta name="twitter:image" content="https://soleslie.github.io/2018/11/08/MBlog的实现/pics/1.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://soleslie.github.io/">
+  <link rel="canonical" href="https://soleslie.github.io/2018/11/08/MBlog的实现/">
 
 
 
@@ -131,7 +141,7 @@
   };
 </script>
 
-  <title>leslie的博客</title>
+  <title>MBlog的实现 | leslie的博客</title>
   
 
 
@@ -180,8 +190,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -218,7 +227,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
   </li>
@@ -262,9 +271,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -296,11 +305,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/08/MBlog的实现/" itemprop="url">
-                  MBlog的实现
-                </a>
+          <h1 class="post-title" itemprop="name headline">MBlog的实现
               
             
           </h1>
@@ -363,9 +368,7 @@
       
 
       
-        
-          
-            <!-- GFM-TOC -->
+        <!-- GFM-TOC -->
 <ul>
 <li><a href="#系统架构图">系统架构图</a></li>
 <li><a href="#在线演示">在线演示</a></li>
@@ -570,8 +573,6 @@
 
 
 
-          
-        
       
     </div>
 
@@ -591,147 +592,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://soleslie.github.io/2018/11/07/leslie/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="leslie">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="leslie的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/07/leslie/" itemprop="url">
-                  leslie
-                </a>
-              
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
+              <a href="/2018/11/07/leslie/" rel="next" title="leslie">
+                <i class="fa fa-chevron-left"></i> leslie
+              </a>
             
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-11-07 11:34:22" itemprop="dateCreated datePublished" datetime="2018-11-07T11:34:22+08:00">2018-11-07</time>
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -741,14 +623,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -769,8 +652,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -815,6 +707,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#系统架构图"><span class="nav-number">1.</span> <span class="nav-text">系统架构图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在线演示"><span class="nav-number">2.</span> <span class="nav-text">在线演示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行环境"><span class="nav-number">3.</span> <span class="nav-text">运行环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#硬件"><span class="nav-number">3.1.</span> <span class="nav-text">硬件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#软件"><span class="nav-number">3.2.</span> <span class="nav-text">软件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#性能测试"><span class="nav-number">4.</span> <span class="nav-text">性能测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缓存实现"><span class="nav-number">5.</span> <span class="nav-text">缓存实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#热点微博"><span class="nav-number">5.1.</span> <span class="nav-text">热点微博</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reids-和-Memcache"><span class="nav-number">5.2.</span> <span class="nav-text">Reids 和 Memcache</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis-配置"><span class="nav-number">5.3.</span> <span class="nav-text">Redis 配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现"><span class="nav-number">5.4.</span> <span class="nav-text">实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#业务上的折中"><span class="nav-number">5.5.</span> <span class="nav-text">业务上的折中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#序列化方式的选择"><span class="nav-number">5.6.</span> <span class="nav-text">序列化方式的选择</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Feed-流"><span class="nav-number">6.</span> <span class="nav-text">Feed 流</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主从架构"><span class="nav-number">7.</span> <span class="nav-text">主从架构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#主从复制"><span class="nav-number">7.1.</span> <span class="nav-text">主从复制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#读写分离"><span class="nav-number">7.2.</span> <span class="nav-text">读写分离</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主从复制配置"><span class="nav-number">7.3.</span> <span class="nav-text">主从复制配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建复制账号"><span class="nav-number">7.3.1.</span> <span class="nav-text">创建复制账号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置-my-cnf-文件"><span class="nav-number">7.3.2.</span> <span class="nav-text">配置 my.cnf 文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启动复制"><span class="nav-number">7.3.3.</span> <span class="nav-text">启动复制</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安全性"><span class="nav-number">8.</span> <span class="nav-text">安全性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#XSS-防御"><span class="nav-number">8.1.</span> <span class="nav-text">XSS 防御</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis-Crackit"><span class="nav-number">8.2.</span> <span class="nav-text">Redis Crackit</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#交互设计"><span class="nav-number">9.</span> <span class="nav-text">交互设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#登录时异步修改用户头像"><span class="nav-number">9.1.</span> <span class="nav-text">登录时异步修改用户头像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#异步删帖"><span class="nav-number">9.2.</span> <span class="nav-text">异步删帖</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -952,6 +860,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
 
   
 

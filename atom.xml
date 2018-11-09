@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>leslie的博客</title>
+  
+  <subtitle>当你奋力前行时，全世界都会为你让路</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://soleslie.github.io/"/>
+  <updated>2018-11-07T03:34:22.872Z</updated>
+  <id>https://soleslie.github.io/</id>
+  
+  <author>
+    <name>leslie</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leslie</title>
+    <link href="https://soleslie.github.io/2018/11/07/leslie/"/>
+    <id>https://soleslie.github.io/2018/11/07/leslie/</id>
+    <published>2018-11-07T03:34:22.000Z</published>
+    <updated>2018-11-07T03:34:22.872Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

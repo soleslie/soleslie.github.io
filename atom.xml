@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://soleslie.github.io/"/>
-  <updated>2018-11-13T15:29:48.111Z</updated>
+  <updated>2018-11-13T15:32:18.336Z</updated>
   <id>https://soleslie.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://soleslie.github.io/2018/11/13/java%E5%A4%9A%E7%BA%BF%E7%A8%8B-%E4%B8%80-%E2%80%94%E2%80%94%E6%A6%82%E5%BF%B5%E5%92%8C%E5%8E%9F%E7%90%86/"/>
     <id>https://soleslie.github.io/2018/11/13/java多线程-一-——概念和原理/</id>
     <published>2018-11-13T05:51:20.000Z</published>
-    <updated>2018-11-13T15:29:48.111Z</updated>
+    <updated>2018-11-13T15:32:18.336Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="一、操作系统中进程和线程的概念"><a href="#一、操作系统中进程和线程的概念" class="headerlink" title="一、操作系统中进程和线程的概念"></a>一、操作系统中进程和线程的概念</h1><p>现在的操作系统是多任务操作系统。多线程是实现多任务的一种方式。</p><p>进程是指一个内存中运行的应用程序，每个进程都有自己独立的一块内存空间，一个进程中可以启动多个线程。比如在Windows系统中，一个运行的exe就是一个进程。</p><p>线程是指进程中的一个执行流程，一个进程中可以运行多个线程。比如java.exe进程中可以运行很多线程。线程总是属于某个进程，进程中的多个线程共享进程的内存。</p><p>“同时”执行是人的感觉，在线程之间实际上轮换执行。 </p><h1 id="二、Java中的线程"><a href="#二、Java中的线程" class="headerlink" title="二、Java中的线程"></a>二、Java中的线程</h1><p>在Java中，线程可以代指两件不同的事情</p><ol><li>java.lang.Thread 的一个实例</li><li>线程的运行</li></ol><p>java线程的基本知识:</p><p>使用java.lang.Thread类或者java.lang.Runnable接口编写代码来定义、实例化和启动新线程。</p><p>一个Thread类实例只是一个对象，像Java中的任何其他对象一样，具有变量和方法，生死于堆上。</p><p>Java中，每个线程都有一个调用栈。 </p><p>一个Java应用总是从main()方法开始运行，mian()方法运行在一个线程内，它被称为主线程。</p><p>一旦创建一个新的线程，就产生一个新的调用栈。</p><p>线程总体分两类：用户线程和守护线程。</p><p>当所有用户线程执行完毕的时候，JVM自动关闭。但是守护线程却不独立于JVM，守护线程一般是由操作系统或者用户自己创建的。</p><p><a href="#1">Leslie的介绍</a><br>的撒旦是大三大三</p><p><a name="1">Leslie是一个大帅哥</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="一、操作系统中进程和线程的概念"><a href="#一、操作系统中进程和线程的概念" class="headerlink" title="一、操作系统中进程和线程的概念"></a>一、操作系统中进程和线程的概念</h1><p>现在的操作系统是多任务操作系统。多线程是实现多任务的一种方式。</p><p>进程是指一个内存中运行的应用程序，每个进程都有自己独立的一块内存空间，一个进程中可以启动多个线程。比如在Windows系统中，一个运行的exe就是一个进程。</p><p>线程是指进程中的一个执行流程，一个进程中可以运行多个线程。比如java.exe进程中可以运行很多线程。线程总是属于某个进程，进程中的多个线程共享进程的内存。</p><p>“同时”执行是人的感觉，在线程之间实际上轮换执行。 </p><h1 id="二、Java中的线程"><a href="#二、Java中的线程" class="headerlink" title="二、Java中的线程"></a>二、Java中的线程</h1><p>在Java中，线程可以代指两件不同的事情</p><ol><li>java.lang.Thread 的一个实例</li><li>线程的运行</li></ol><p>java线程的基本知识:</p><p>使用java.lang.Thread类或者java.lang.Runnable接口编写代码来定义、实例化和启动新线程。</p><p>一个Thread类实例只是一个对象，像Java中的任何其他对象一样，具有变量和方法，生死于堆上。</p><p>Java中，每个线程都有一个调用栈。 </p><p>一个Java应用总是从main()方法开始运行，mian()方法运行在一个线程内，它被称为主线程。</p><p>一旦创建一个新的线程，就产生一个新的调用栈。</p><p>线程总体分两类：用户线程和守护线程。</p><p>当所有用户线程执行完毕的时候，JVM自动关闭。但是守护线程却不独立于JVM，守护线程一般是由操作系统或者用户自己创建的。</p>]]></content>
     
     <summary type="html">
     

@@ -108,18 +108,18 @@
 
 
 
-  <meta name="description" content="一、操作系统中进程和线程的概念现在的操作系统是多任务操作系统。多线程是实现多任务的一种方式。 进程是指一个内存中运行的应用程序，每个进程都有自己独立的一块内存空间，一个进程中可以启动多个线程。比如在Windows系统中，一个运行的exe就是一个进程。">
-<meta name="keywords" content="多线程,并发">
+  <meta name="description" content="一、定义线程1、扩展java.lang.Thread类 此类中有个run()方法，应该注意其用法： public void run() 如果该线程是使用独立的 Runnable 运行对象构造的，则调用该 Runnable 对象的 run 方法；否则，该方法不执行任何操作并返回。  Thread 的子类应该重写该方法。">
+<meta name="keywords" content="-多线程 -并发">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java多线程 (一) ——概念和原理">
-<meta property="og:url" content="https://soleslie.github.io/2018/11/13/java多线程-一-——概念和原理/index.html">
+<meta property="og:title" content="java多线程 (二) ——创建与启动">
+<meta property="og:url" content="https://soleslie.github.io/2018/11/15/java多线程-二-创建与启动/index.html">
 <meta property="og:site_name" content="leslie的博客">
-<meta property="og:description" content="一、操作系统中进程和线程的概念现在的操作系统是多任务操作系统。多线程是实现多任务的一种方式。 进程是指一个内存中运行的应用程序，每个进程都有自己独立的一块内存空间，一个进程中可以启动多个线程。比如在Windows系统中，一个运行的exe就是一个进程。">
+<meta property="og:description" content="一、定义线程1、扩展java.lang.Thread类 此类中有个run()方法，应该注意其用法： public void run() 如果该线程是使用独立的 Runnable 运行对象构造的，则调用该 Runnable 对象的 run 方法；否则，该方法不执行任何操作并返回。  Thread 的子类应该重写该方法。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-15T06:36:48.542Z">
+<meta property="og:updated_time" content="2018-11-15T07:20:40.579Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java多线程 (一) ——概念和原理">
-<meta name="twitter:description" content="一、操作系统中进程和线程的概念现在的操作系统是多任务操作系统。多线程是实现多任务的一种方式。 进程是指一个内存中运行的应用程序，每个进程都有自己独立的一块内存空间，一个进程中可以启动多个线程。比如在Windows系统中，一个运行的exe就是一个进程。">
+<meta name="twitter:title" content="java多线程 (二) ——创建与启动">
+<meta name="twitter:description" content="一、定义线程1、扩展java.lang.Thread类 此类中有个run()方法，应该注意其用法： public void run() 如果该线程是使用独立的 Runnable 运行对象构造的，则调用该 Runnable 对象的 run 方法；否则，该方法不执行任何操作并返回。  Thread 的子类应该重写该方法。">
 
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <link rel="canonical" href="https://soleslie.github.io/2018/11/13/java多线程-一-——概念和原理/">
+  <link rel="canonical" href="https://soleslie.github.io/2018/11/15/java多线程-二-创建与启动/">
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>java多线程 (一) ——概念和原理 | leslie的博客</title>
+  <title>java多线程 (二) ——创建与启动 | leslie的博客</title>
   
 
 
@@ -305,7 +305,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://soleslie.github.io/2018/11/13/java多线程-一-——概念和原理/">
+    <link itemprop="mainEntityOfPage" href="https://soleslie.github.io/2018/11/15/java多线程-二-创建与启动/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="leslie">
@@ -322,7 +322,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">java多线程 (一) ——概念和原理
+          <h1 class="post-title" itemprop="name headline">java多线程 (二) ——创建与启动
               
             
           </h1>
@@ -347,24 +347,12 @@
                 
               
 
-              <time title="创建时间：2018-11-13 13:51:20" itemprop="dateCreated datePublished" datetime="2018-11-13T13:51:20+08:00">2018-11-13</time>
+              <time title="创建时间：2018-11-15 15:12:08 / 修改时间：15:20:40" itemprop="dateCreated datePublished" datetime="2018-11-15T15:12:08+08:00">2018-11-15</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-11-15 14:36:48" itemprop="dateModified" datetime="2018-11-15T14:36:48+08:00">2018-11-15</time>
               
             
           </span>
@@ -415,22 +403,107 @@
       
 
       
-        <h1 id="一、操作系统中进程和线程的概念"><a href="#一、操作系统中进程和线程的概念" class="headerlink" title="一、操作系统中进程和线程的概念"></a>一、操作系统中进程和线程的概念</h1><p>现在的操作系统是多任务操作系统。多线程是实现多任务的一种方式。</p>
-<p>进程是指一个内存中运行的应用程序，每个进程都有自己独立的一块内存空间，一个进程中可以启动多个线程。比如在Windows系统中，一个运行的exe就是一个进程。<br><a id="more"></a><br>线程是指进程中的一个执行流程，一个进程中可以运行多个线程。比如java.exe进程中可以运行很多线程。线程总是属于某个进程，进程中的多个线程共享进程的内存。</p>
-<p>“同时”执行是人的感觉，在线程之间实际上轮换执行。 </p>
-<h1 id="二、Java中的线程"><a href="#二、Java中的线程" class="headerlink" title="二、Java中的线程"></a>二、Java中的线程</h1><p>在Java中，线程可以代指两件不同的事情</p>
-<ol>
-<li>java.lang.Thread 的一个实例</li>
-<li>线程的运行</li>
-</ol>
-<p>java线程的基本知识:</p>
-<p>使用java.lang.Thread类或者java.lang.Runnable接口编写代码来定义、实例化和启动新线程。</p>
-<p>一个Thread类实例只是一个对象，像Java中的任何其他对象一样，具有变量和方法，生死于堆上。</p>
-<p>Java中，每个线程都有一个调用栈。 </p>
-<p>一个Java应用总是从main()方法开始运行，mian()方法运行在一个线程内，它被称为主线程。</p>
-<p>一旦创建一个新的线程，就产生一个新的调用栈。</p>
-<p>线程总体分两类：用户线程和守护线程。</p>
-<p>当所有用户线程执行完毕的时候，JVM自动关闭。但是守护线程却不独立于JVM，守护线程一般是由操作系统或者用户自己创建的。</p>
+        <p>一、定义线程<br>1、扩展java.lang.Thread类</p>
+<p>此类中有个run()方法，应该注意其用法：</p>
+<p>public void run()</p>
+<pre><code>如果该线程是使用独立的 Runnable 运行对象构造的，则调用该 Runnable 对象的 run 方法；否则，该方法不执行任何操作并返回。
+
+Thread 的子类应该重写该方法。
+</code></pre><a id="more"></a>
+<p>2、实现java.lang.Runnable接口</p>
+<p>void run()</p>
+<pre><code>使用实现接口 Runnable 的对象创建一个线程时，启动该线程将导致在独立执行的线程中调用对象的 run 方法。
+
+方法 run 的常规协定是，它可能执行任何所需的操作。
+</code></pre><p>二、实例化线程</p>
+<p>1、如果是扩展java.lang.Thread类的线程，则直接new即可。</p>
+<p>2、如果是实现了java.lang.Runnable接口的类，则用Thread的构造方法：</p>
+<p>Thread(Runnable target)<br>Thread(Runnable target, String name)<br>Thread(ThreadGroup group, Runnable target)<br>Thread(ThreadGroup group, Runnable target, String name)<br>Thread(ThreadGroup group, Runnable target, String name, long stackSize)</p>
+<p>三、启动线程</p>
+<p>在线程的Thread对象上调用start()方法，而不是run()或者别的方法。</p>
+<p>在调用start()方法之前：线程处于新状态中，新状态指有一个Thread对象，但还没有一个真正的线程。</p>
+<p>在调用start()方法之后：发生了一系列复杂的事情</p>
+<p>启动新的执行线程（具有新的调用栈）；</p>
+<p>该线程从新状态转移到可运行状态；</p>
+<p>当该线程获得机会执行时，其目标run()方法将运行。</p>
+<p>注意：对Java来说，run()方法没有任何特别之处。像main()方法一样，它只是新线程知道调用的方法名称(和签名)。因此，在Runnable上或者Thread上调用run方法是合法的。但并不启动新的线程。<br>四、例子<br>1、实现Runnable接口的多线程例子</p>
+<pre><code>/** 
+* 实现Runnable接口的类 
+* 
+* @author leizhimin 2008-9-13 18:12:10 
+*/ 
+    public class DoSomething implements Runnable { 
+        private String name; 
+
+    public DoSomething(String name) { 
+        this.name = name; 
+    } 
+
+    public void run() { 
+     for (int i = 0; i &lt; 5; i++) { 
+        for (long k = 0; k &lt; 100000000; k++) ; 
+        System.out.println(name + &quot;: &quot; + i); 
+    } 
+} 
+}
+
+/** 
+* 测试Runnable类实现的多线程程序 
+* 
+* @author leizhimin 2008-9-13 18:15:02 
+*/ 
+public class TestRunnable { 
+    public static void main(String[] args) { 
+        DoSomething ds1 = new DoSomething(&quot;阿三&quot;); 
+        DoSomething ds2 = new DoSomething(&quot;李四&quot;); 
+
+        Thread t1 = new Thread(ds1); 
+        Thread t2 = new Thread(ds2); 
+
+        t1.start(); 
+        t2.start(); 
+    } 
+}
+</code></pre><p>执行结果：</p>
+<p>李四: 0<br>阿三: 0<br>李四: 1<br>阿三: 1<br>李四: 2<br>李四: 3<br>阿三: 2<br>李四: 4<br>阿三: 3<br>阿三: 4<br>Process finished with exit code 0</p>
+<p>2、扩展Thread类实现的多线程例子</p>
+<pre><code>/** 
+* 测试扩展Thread类实现的多线程程序 
+* 
+* @author leizhimin 2008-9-13 18:22:13 
+*/ 
+public class TestThread extends Thread{ 
+    public TestThread(String name) { 
+        super(name); 
+    } 
+
+    public void run() { 
+        for(int i = 0;i&lt;5;i++){ 
+            for(long k= 0; k &lt;100000000;k++); 
+            System.out.println(this.getName()+&quot; :&quot;+i); 
+        } 
+    } 
+
+    public static void main(String[] args) { 
+        Thread t1 = new TestThread(&quot;阿三&quot;); 
+        Thread t2 = new TestThread(&quot;李四&quot;); 
+        t1.start(); 
+        t2.start(); 
+    } 
+}
+</code></pre><p>执行结果：</p>
+<p>阿三 :0<br>李四 :0<br>阿三 :1<br>李四 :1<br>阿三 :2<br>李四 :2<br>阿三 :3<br>阿三 :4<br>李四 :3<br>李四 :4<br>Process finished with exit code 0</p>
+<p>对于上面的多线程程序代码来说，输出的结果是不确定的。其中的一条语句for(long k= 0; k &lt;100000000;k++);是用来模拟一个非常耗时的操作的。<br>五、一些常见问题</p>
+<p>1、线程的名字，一个运行中的线程总是有名字的，名字有两个来源，一个是虚拟机自己给的名字，一个是你自己的定的名字。在没有指定线程名字的情况下，虚拟机总会为线程指定名字，并且主线程的名字总是mian，非主线程的名字不确定。</p>
+<p>2、线程都可以设置名字，也可以获取线程的名字，连主线程也不例外。</p>
+<p>3、获取当前线程的对象的方法是：Thread.currentThread()；</p>
+<p>4、在上面的代码中，只能保证：每个线程都将启动，每个线程都将运行直到完成。一系列线程以某种顺序启动并不意味着将按该顺序执行。对于任何一组启动的线程来说，调度程序不能保证其执行次序，持续时间也无法保证。</p>
+<p>5、当线程目标run()方法结束时该线程完成。</p>
+<p>6、一旦线程启动，它就永远不能再重新启动。只有一个新的线程可以被启动，并且只能一次。一个可运行的线程或死线程可以被重新启动。</p>
+<p>7、线程的调度是JVM的一部分，在一个CPU的机器上上，实际上一次只能运行一个线程。一次只有一个线程栈执行。JVM线程调度程序决定实际运行哪个处于可运行状态的线程。</p>
+<p>众多可运行线程中的某一个会被选中做为当前线程。可运行线程被选择运行的顺序是没有保障的。</p>
+<p>8、尽管通常采用队列形式，但这是没有保障的。队列形式是指当一个线程完成“一轮”时，它移到可运行队列的尾部等待，直到它最终排队到该队列的前端为止，它才能被再次选中。事实上，我们把它称为可运行池而不是一个可运行队列，目的是帮助认识线程并不都是以某种有保障的顺序排列唱呢个一个队列的事实。</p>
+<p>9、尽管我们没有无法控制线程调度程序，但可以通过别的方式来影响线程调度的方式。</p>
 
       
     </div>
@@ -451,9 +524,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/多线程/" rel="tag"># 多线程</a>
-          
-            <a href="/tags/并发/" rel="tag"># 并发</a>
+            <a href="/tags/多线程-并发/" rel="tag"># -多线程 -并发</a>
           
         </div>
       
@@ -466,8 +537,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/09/leslie/" rel="next" title="leslie">
-                <i class="fa fa-chevron-left"></i> leslie
+              <a href="/2018/11/13/java多线程-一-——概念和原理/" rel="next" title="java多线程 (一) ——概念和原理">
+                <i class="fa fa-chevron-left"></i> java多线程 (一) ——概念和原理
               </a>
             
           </div>
@@ -475,10 +546,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/15/java多线程-二-创建与启动/" rel="prev" title="java多线程 (二) ——创建与启动">
-                java多线程 (二) ——创建与启动 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -528,17 +595,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -620,22 +678,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、操作系统中进程和线程的概念"><span class="nav-number">1.</span> <span class="nav-text">一、操作系统中进程和线程的概念</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、Java中的线程"><span class="nav-number">2.</span> <span class="nav-text">二、Java中的线程</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -792,7 +834,7 @@
   
     <script type="text/javascript">
       window.livereOptions = {
-        refer: '2018/11/13/java多线程-一-——概念和原理/'
+        refer: '2018/11/15/java多线程-二-创建与启动/'
       };
       (function(d, s) {
         var j, e = d.getElementsByTagName(s)[0];

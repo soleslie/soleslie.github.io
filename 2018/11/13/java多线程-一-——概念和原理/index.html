@@ -108,18 +108,18 @@
 
 
 
-  <meta name="description" content="java基础知识">
+  <meta name="description" content="一、操作系统中进程和线程的概念现在的操作系统是多任务操作系统。多线程是实现多任务的一种方式。 进程是指一个内存中运行的应用程序，每个进程都有自己独立的一块内存空间，一个进程中可以启动多个线程。比如在Windows系统中，一个运行的exe就是一个进程。">
 <meta name="keywords" content="多线程,并发">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java多线程 (一) ——概念和原理">
 <meta property="og:url" content="https://soleslie.github.io/2018/11/13/java多线程-一-——概念和原理/index.html">
 <meta property="og:site_name" content="leslie的博客">
-<meta property="og:description" content="java基础知识">
+<meta property="og:description" content="一、操作系统中进程和线程的概念现在的操作系统是多任务操作系统。多线程是实现多任务的一种方式。 进程是指一个内存中运行的应用程序，每个进程都有自己独立的一块内存空间，一个进程中可以启动多个线程。比如在Windows系统中，一个运行的exe就是一个进程。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-13T15:50:27.482Z">
+<meta property="og:updated_time" content="2018-11-15T06:36:48.542Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java多线程 (一) ——概念和原理">
-<meta name="twitter:description" content="java基础知识">
+<meta name="twitter:description" content="一、操作系统中进程和线程的概念现在的操作系统是多任务操作系统。多线程是实现多任务的一种方式。 进程是指一个内存中运行的应用程序，每个进程都有自己独立的一块内存空间，一个进程中可以启动多个线程。比如在Windows系统中，一个运行的exe就是一个进程。">
 
 
 
@@ -347,12 +347,24 @@
                 
               
 
-              <time title="创建时间：2018-11-13 13:51:20 / 修改时间：23:50:27" itemprop="dateCreated datePublished" datetime="2018-11-13T13:51:20+08:00">2018-11-13</time>
+              <time title="创建时间：2018-11-13 13:51:20" itemprop="dateCreated datePublished" datetime="2018-11-13T13:51:20+08:00">2018-11-13</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-15 14:36:48" itemprop="dateModified" datetime="2018-11-15T14:36:48+08:00">2018-11-15</time>
               
             
           </span>
@@ -403,10 +415,8 @@
       
 
       
-        <p>java基础知识<br><a id="more"></a></p>
-<h1 id="一、操作系统中进程和线程的概念"><a href="#一、操作系统中进程和线程的概念" class="headerlink" title="一、操作系统中进程和线程的概念"></a>一、操作系统中进程和线程的概念</h1><p>现在的操作系统是多任务操作系统。多线程是实现多任务的一种方式。</p>
-<p>进程是指一个内存中运行的应用程序，每个进程都有自己独立的一块内存空间，一个进程中可以启动多个线程。比如在Windows系统中，一个运行的exe就是一个进程。</p>
-<p>线程是指进程中的一个执行流程，一个进程中可以运行多个线程。比如java.exe进程中可以运行很多线程。线程总是属于某个进程，进程中的多个线程共享进程的内存。</p>
+        <h1 id="一、操作系统中进程和线程的概念"><a href="#一、操作系统中进程和线程的概念" class="headerlink" title="一、操作系统中进程和线程的概念"></a>一、操作系统中进程和线程的概念</h1><p>现在的操作系统是多任务操作系统。多线程是实现多任务的一种方式。</p>
+<p>进程是指一个内存中运行的应用程序，每个进程都有自己独立的一块内存空间，一个进程中可以启动多个线程。比如在Windows系统中，一个运行的exe就是一个进程。<br><a id="more"></a><br>线程是指进程中的一个执行流程，一个进程中可以运行多个线程。比如java.exe进程中可以运行很多线程。线程总是属于某个进程，进程中的多个线程共享进程的内存。</p>
 <p>“同时”执行是人的感觉，在线程之间实际上轮换执行。 </p>
 <h1 id="二、Java中的线程"><a href="#二、Java中的线程" class="headerlink" title="二、Java中的线程"></a>二、Java中的线程</h1><p>在Java中，线程可以代指两件不同的事情</p>
 <ol>

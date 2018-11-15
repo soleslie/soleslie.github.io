@@ -108,18 +108,18 @@
 
 
 
-  <meta name="description" content="一、定义线程1、扩展java.lang.Thread类 此类中有个run()方法，应该注意其用法： public void run() 如果该线程是使用独立的 Runnable 运行对象构造的，则调用该 Runnable 对象的 run 方法；否则，该方法不执行任何操作并返回。  Thread 的子类应该重写该方法。">
+  <meta name="description" content="一、定义线程1、扩展java.lang.Thread类 此类中有个run()方法，应该注意其用法： public void run()  如果该线程是使用独立的 Runnable 运行对象构造的，则调用该 Runnable 对象的 run 方法；否则，该方法不执行任何操作并返回。  Thread 的子类应该重写该方法。">
 <meta name="keywords" content="-多线程 -并发">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java多线程 (二) ——创建与启动">
 <meta property="og:url" content="https://soleslie.github.io/2018/11/15/java多线程-二-创建与启动/index.html">
 <meta property="og:site_name" content="leslie的博客">
-<meta property="og:description" content="一、定义线程1、扩展java.lang.Thread类 此类中有个run()方法，应该注意其用法： public void run() 如果该线程是使用独立的 Runnable 运行对象构造的，则调用该 Runnable 对象的 run 方法；否则，该方法不执行任何操作并返回。  Thread 的子类应该重写该方法。">
+<meta property="og:description" content="一、定义线程1、扩展java.lang.Thread类 此类中有个run()方法，应该注意其用法： public void run()  如果该线程是使用独立的 Runnable 运行对象构造的，则调用该 Runnable 对象的 run 方法；否则，该方法不执行任何操作并返回。  Thread 的子类应该重写该方法。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-15T07:20:40.579Z">
+<meta property="og:updated_time" content="2018-11-15T07:42:15.268Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java多线程 (二) ——创建与启动">
-<meta name="twitter:description" content="一、定义线程1、扩展java.lang.Thread类 此类中有个run()方法，应该注意其用法： public void run() 如果该线程是使用独立的 Runnable 运行对象构造的，则调用该 Runnable 对象的 run 方法；否则，该方法不执行任何操作并返回。  Thread 的子类应该重写该方法。">
+<meta name="twitter:description" content="一、定义线程1、扩展java.lang.Thread类 此类中有个run()方法，应该注意其用法： public void run()  如果该线程是使用独立的 Runnable 运行对象构造的，则调用该 Runnable 对象的 run 方法；否则，该方法不执行任何操作并返回。  Thread 的子类应该重写该方法。">
 
 
 
@@ -347,7 +347,7 @@
                 
               
 
-              <time title="创建时间：2018-11-15 15:12:08 / 修改时间：15:20:40" itemprop="dateCreated datePublished" datetime="2018-11-15T15:12:08+08:00">2018-11-15</time>
+              <time title="创建时间：2018-11-15 15:12:08 / 修改时间：15:42:15" itemprop="dateCreated datePublished" datetime="2018-11-15T15:12:08+08:00">2018-11-15</time>
             
 
             
@@ -405,21 +405,29 @@
       
         <p>一、定义线程<br>1、扩展java.lang.Thread类</p>
 <p>此类中有个run()方法，应该注意其用法：</p>
-<p>public void run()</p>
-<pre><code>如果该线程是使用独立的 Runnable 运行对象构造的，则调用该 Runnable 对象的 run 方法；否则，该方法不执行任何操作并返回。
+<pre><code>public void run()
+
+如果该线程是使用独立的 Runnable 运行对象构造的，则调用该 Runnable 对象的 run 方法；否则，该方法不执行任何操作并返回。
 
 Thread 的子类应该重写该方法。
 </code></pre><a id="more"></a>
 <p>2、实现java.lang.Runnable接口</p>
-<p>void run()</p>
-<pre><code>使用实现接口 Runnable 的对象创建一个线程时，启动该线程将导致在独立执行的线程中调用对象的 run 方法。
+<pre><code>void run()
+
+使用实现接口 Runnable 的对象创建一个线程时，启动该线程将导致在独立执行的线程中调用对象的 run 方法。
 
 方法 run 的常规协定是，它可能执行任何所需的操作。
 </code></pre><p>二、实例化线程</p>
-<p>1、如果是扩展java.lang.Thread类的线程，则直接new即可。</p>
-<p>2、如果是实现了java.lang.Runnable接口的类，则用Thread的构造方法：</p>
-<p>Thread(Runnable target)<br>Thread(Runnable target, String name)<br>Thread(ThreadGroup group, Runnable target)<br>Thread(ThreadGroup group, Runnable target, String name)<br>Thread(ThreadGroup group, Runnable target, String name, long stackSize)</p>
-<p>三、启动线程</p>
+<pre><code>1、如果是扩展java.lang.Thread类的线程，则直接new即可。
+
+2、如果是实现了java.lang.Runnable接口的类，则用Thread的构造方法：
+
+Thread(Runnable target)
+Thread(Runnable target, String name)
+Thread(ThreadGroup group, Runnable target)
+Thread(ThreadGroup group, Runnable target, String name)
+Thread(ThreadGroup group, Runnable target, String name, long stackSize)
+</code></pre><p>三、启动线程</p>
 <p>在线程的Thread对象上调用start()方法，而不是run()或者别的方法。</p>
 <p>在调用start()方法之前：线程处于新状态中，新状态指有一个Thread对象，但还没有一个真正的线程。</p>
 <p>在调用start()方法之后：发生了一系列复杂的事情</p>

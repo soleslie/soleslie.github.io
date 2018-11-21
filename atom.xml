@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://soleslie.github.io/"/>
-  <updated>2018-11-21T08:40:51.540Z</updated>
+  <updated>2018-11-21T08:44:01.864Z</updated>
   <id>https://soleslie.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java集合详解3-Iterator,fail-fast机制，比较器</title>
+    <title>Java集合详解3——Iterator,fail-fast机制与比较器</title>
     <link href="https://soleslie.github.io/2018/11/21/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A33/"/>
     <id>https://soleslie.github.io/2018/11/21/Java集合详解3/</id>
     <published>2018-11-21T08:30:44.000Z</published>
-    <updated>2018-11-21T08:40:51.540Z</updated>
+    <updated>2018-11-21T08:44:01.864Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://h2pl.github.io/2018/05/09/collection3/" target="_blank" rel="noopener">传送门</a></p>]]></content>
     

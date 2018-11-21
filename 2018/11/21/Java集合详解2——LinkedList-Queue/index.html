@@ -115,7 +115,7 @@
 <meta property="og:site_name" content="leslie的博客">
 <meta property="og:description" content="LinkedList概述 LinkedList与ArrayList一样实现List接口，只是ArrayList是List接口的大小可变数组的实现，LinkedList是List接口链表的实现。基于链表实现的方式使得LinkedList在插入和删除时更优于ArrayList，而随机访问则比ArrayList逊色些。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-21T08:17:57.860Z">
+<meta property="og:updated_time" content="2018-11-21T08:19:35.984Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java集合详解2——LinkedList,Queue">
 <meta name="twitter:description" content="LinkedList概述 LinkedList与ArrayList一样实现List接口，只是ArrayList是List接口的大小可变数组的实现，LinkedList是List接口链表的实现。基于链表实现的方式使得LinkedList在插入和删除时更优于ArrayList，而随机访问则比ArrayList逊色些。">
@@ -346,7 +346,7 @@
                 
               
 
-              <time title="创建时间：2018-11-21 15:53:41 / 修改时间：16:17:57" itemprop="dateCreated datePublished" datetime="2018-11-21T15:53:41+08:00">2018-11-21</time>
+              <time title="创建时间：2018-11-21 15:53:41 / 修改时间：16:19:35" itemprop="dateCreated datePublished" datetime="2018-11-21T15:53:41+08:00">2018-11-21</time>
             
 
             
@@ -449,7 +449,7 @@
 <p>再执行 siftUp() 上滤过程：<br>(<a href="https://upload-images.jianshu.io/upload_images/195193-e9ad437213e69b07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/633" target="_blank" rel="noopener">https://upload-images.jianshu.io/upload_images/195193-e9ad437213e69b07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/633</a>)</p>
 <h2 id="总结和同步的问题"><a href="#总结和同步的问题" class="headerlink" title="总结和同步的问题"></a>总结和同步的问题</h2><p>1、jdk内置的优先队列PriorityQueue内部使用一个堆维护数据，每当有数据add进来或者poll出去的时候会对堆做从下往上的调整和从上往下的调整。</p>
 <p>2、PriorityQueue不是一个线程安全的类，如果要在多线程环境下使用，可以使用 PriorityBlockingQueue 这个优先阻塞队列。其中add、poll、remove方法都使用 ReentrantLock 锁来保持同步，take() 方法中如果元素为空，则会一直保持阻塞</p>
-<p>本文转载自：<a href="https://h2pl.github.io/2018/05/09/collection2/" target="_blank" rel="noopener">h2pl</a></p>
+<p>本文转载自：<a href="https://h2pl.github.io/2018/05/09/collection2/" target="_blank" rel="noopener">h2pl</a> <a href="https://h2pl.github.io/2018/05/09/collection2/" target="_blank" rel="noopener">https://h2pl.github.io/2018/05/09/collection2/</a></p>
 
       
     </div>

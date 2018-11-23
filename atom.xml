@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://soleslie.github.io/"/>
-  <updated>2018-11-23T01:48:08.705Z</updated>
+  <updated>2018-11-23T02:46:05.193Z</updated>
   <id>https://soleslie.github.io/</id>
   
   <author>
@@ -17,9 +17,23 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Java中的内存溢出与泄漏</title>
+    <link href="https://soleslie.github.io/2018/11/23/JVM/Java%E4%B8%AD%E7%9A%84%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA%E4%B8%8E%E6%B3%84%E6%BC%8F/"/>
+    <id>https://soleslie.github.io/2018/11/23/JVM/Java中的内存溢出与泄漏/</id>
+    <published>2018-11-23T02:46:05.000Z</published>
+    <updated>2018-11-23T02:46:05.193Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>java集合详解4——HashMap和HashTable</title>
-    <link href="https://soleslie.github.io/2018/11/21/java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A34/"/>
-    <id>https://soleslie.github.io/2018/11/21/java集合详解4/</id>
+    <link href="https://soleslie.github.io/2018/11/21/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A34/"/>
+    <id>https://soleslie.github.io/2018/11/21/Java集合详解/java集合详解4/</id>
     <published>2018-11-21T08:54:47.000Z</published>
     <updated>2018-11-23T01:48:08.705Z</updated>
     
@@ -44,8 +58,8 @@
   
   <entry>
     <title>Java集合详解3——Iterator,fail-fast机制与比较器</title>
-    <link href="https://soleslie.github.io/2018/11/21/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A33/"/>
-    <id>https://soleslie.github.io/2018/11/21/Java集合详解3/</id>
+    <link href="https://soleslie.github.io/2018/11/21/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A33/"/>
+    <id>https://soleslie.github.io/2018/11/21/Java集合详解/Java集合详解3/</id>
     <published>2018-11-21T08:30:44.000Z</published>
     <updated>2018-11-21T08:48:25.078Z</updated>
     
@@ -70,8 +84,8 @@
   
   <entry>
     <title>Java集合详解2——LinkedList,Queue</title>
-    <link href="https://soleslie.github.io/2018/11/21/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A32%E2%80%94%E2%80%94LinkedList-Queue/"/>
-    <id>https://soleslie.github.io/2018/11/21/Java集合详解2——LinkedList-Queue/</id>
+    <link href="https://soleslie.github.io/2018/11/21/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A32%E2%80%94%E2%80%94LinkedList-Queue/"/>
+    <id>https://soleslie.github.io/2018/11/21/Java集合详解/Java集合详解2——LinkedList-Queue/</id>
     <published>2018-11-21T07:53:41.000Z</published>
     <updated>2018-11-21T08:45:01.354Z</updated>
     
@@ -93,8 +107,8 @@
   
   <entry>
     <title>Java集合详解1——ArrayList,Vector,Stack</title>
-    <link href="https://soleslie.github.io/2018/11/21/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A31%E2%80%94%E2%80%94ArrayList-Vector-Stack/"/>
-    <id>https://soleslie.github.io/2018/11/21/Java集合详解1——ArrayList-Vector-Stack/</id>
+    <link href="https://soleslie.github.io/2018/11/21/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A31%E2%80%94%E2%80%94ArrayList-Vector-Stack/"/>
+    <id>https://soleslie.github.io/2018/11/21/Java集合详解/Java集合详解1——ArrayList-Vector-Stack/</id>
     <published>2018-11-21T07:05:57.000Z</published>
     <updated>2018-11-21T08:48:19.120Z</updated>
     
@@ -115,8 +129,8 @@
   
   <entry>
     <title>第四章——对象的组合</title>
-    <link href="https://soleslie.github.io/2018/11/19/%E7%AC%AC%E5%9B%9B%E7%AB%A0%E2%80%94%E2%80%94%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%BB%84%E5%90%88/"/>
-    <id>https://soleslie.github.io/2018/11/19/第四章——对象的组合/</id>
+    <link href="https://soleslie.github.io/2018/11/19/JavaConcurrencyinPractice/%E7%AC%AC%E5%9B%9B%E7%AB%A0%E2%80%94%E2%80%94%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%BB%84%E5%90%88/"/>
+    <id>https://soleslie.github.io/2018/11/19/JavaConcurrencyinPractice/第四章——对象的组合/</id>
     <published>2018-11-19T05:36:20.000Z</published>
     <updated>2018-11-21T08:36:39.016Z</updated>
     
@@ -159,8 +173,8 @@
   
   <entry>
     <title>第三章——对象的共享</title>
-    <link href="https://soleslie.github.io/2018/11/18/%E7%AC%AC%E4%B8%89%E7%AB%A0%E2%80%94%E2%80%94%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%85%B1%E4%BA%AB/"/>
-    <id>https://soleslie.github.io/2018/11/18/第三章——对象的共享/</id>
+    <link href="https://soleslie.github.io/2018/11/18/JavaConcurrencyinPractice/%E7%AC%AC%E4%B8%89%E7%AB%A0%E2%80%94%E2%80%94%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%85%B1%E4%BA%AB/"/>
+    <id>https://soleslie.github.io/2018/11/18/JavaConcurrencyinPractice/第三章——对象的共享/</id>
     <published>2018-11-18T06:33:31.000Z</published>
     <updated>2018-11-21T08:36:42.509Z</updated>
     
@@ -181,8 +195,8 @@
   
   <entry>
     <title>java多线程 (二) ——创建与启动</title>
-    <link href="https://soleslie.github.io/2018/11/15/java%E5%A4%9A%E7%BA%BF%E7%A8%8B2-%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%90%AF%E5%8A%A8/"/>
-    <id>https://soleslie.github.io/2018/11/15/java多线程2-创建与启动/</id>
+    <link href="https://soleslie.github.io/2018/11/15/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/java%E5%A4%9A%E7%BA%BF%E7%A8%8B2-%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%90%AF%E5%8A%A8/"/>
+    <id>https://soleslie.github.io/2018/11/15/Java多线程/java多线程2-创建与启动/</id>
     <published>2018-11-15T07:12:08.000Z</published>
     <updated>2018-11-15T07:45:09.895Z</updated>
     
@@ -210,8 +224,8 @@ Thread 的子类应该重写该方法。
   
   <entry>
     <title>java多线程 (一) ——概念和原理</title>
-    <link href="https://soleslie.github.io/2018/11/13/java%E5%A4%9A%E7%BA%BF%E7%A8%8B1-%E6%A6%82%E5%BF%B5%E5%92%8C%E5%8E%9F%E7%90%86/"/>
-    <id>https://soleslie.github.io/2018/11/13/java多线程1-概念和原理/</id>
+    <link href="https://soleslie.github.io/2018/11/13/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/java%E5%A4%9A%E7%BA%BF%E7%A8%8B1-%E6%A6%82%E5%BF%B5%E5%92%8C%E5%8E%9F%E7%90%86/"/>
+    <id>https://soleslie.github.io/2018/11/13/Java多线程/java多线程1-概念和原理/</id>
     <published>2018-11-13T05:51:20.000Z</published>
     <updated>2018-11-15T06:36:48.542Z</updated>
     

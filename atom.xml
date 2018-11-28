@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://soleslie.github.io/"/>
-  <updated>2018-11-27T04:03:16.794Z</updated>
+  <updated>2018-11-28T03:19:01.224Z</updated>
   <id>https://soleslie.github.io/</id>
   
   <author>
@@ -15,6 +15,82 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java集合详解7-set家族</title>
+    <link href="https://soleslie.github.io/2018/11/28/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A36-set%E5%AE%B6%E6%97%8F/"/>
+    <id>https://soleslie.github.io/2018/11/28/Java集合详解6-set家族/</id>
+    <published>2018-11-28T03:14:58.000Z</published>
+    <updated>2018-11-28T03:19:01.224Z</updated>
+    
+    <content type="html"><![CDATA[<p>抓准核心，HashSet、LinkedHashSet和TreeSet分别是基于对应的三种map实现，利用了map键不能重复的特点，实现set不能包含重复元素的特点，所以重点是理解map。<br>传送门[<a href="https://h2pl.github.io/2018/05/12/collection7/]" target="_blank" rel="noopener">https://h2pl.github.io/2018/05/12/collection7/]</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;抓准核心，HashSet、LinkedHashSet和TreeSet分别是基于对应的三种map实现，利用了map键不能重复的特点，实现set不能包含重复元素的特点，所以重点是理解map。&lt;br&gt;传送门[&lt;a href=&quot;https://h2pl.github.io/2018
+      
+    
+    </summary>
+    
+      <category term="Java集合详解" scheme="https://soleslie.github.io/categories/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/"/>
+    
+    
+      <category term="Java集合" scheme="https://soleslie.github.io/tags/Java%E9%9B%86%E5%90%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java集合详解6-TreeMap和红黑树</title>
+    <link href="https://soleslie.github.io/2018/11/28/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A37-TreeMap%E5%92%8C%E7%BA%A2%E9%BB%91%E6%A0%91/"/>
+    <id>https://soleslie.github.io/2018/11/28/Java集合详解7-TreeMap和红黑树/</id>
+    <published>2018-11-28T02:25:41.000Z</published>
+    <updated>2018-11-28T02:52:19.174Z</updated>
+    
+    <content type="html"><![CDATA[<p>红黑树真的有点难，理解都有点苦难，等自己把树的知识打扎实之后，我会回来的<br>原文出处<br><a href="http://www.cnblogs.com/xrq730/p/6867924.html" target="_blank" rel="noopener">http://www.cnblogs.com/xrq730/p/6867924.html</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;红黑树真的有点难，理解都有点苦难，等自己把树的知识打扎实之后，我会回来的&lt;br&gt;原文出处&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/xrq730/p/6867924.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;htt
+      
+    
+    </summary>
+    
+      <category term="Java集合详解" scheme="https://soleslie.github.io/categories/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/"/>
+    
+    
+      <category term="Java集合" scheme="https://soleslie.github.io/tags/Java%E9%9B%86%E5%90%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java集合详解5:深入理解LinkedHashMap和LRU缓存</title>
+    <link href="https://soleslie.github.io/2018/11/28/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A35-%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3LinkedHashMap%E5%92%8CLRU%E7%BC%93%E5%AD%98/"/>
+    <id>https://soleslie.github.io/2018/11/28/Java集合详解5-深入理解LinkedHashMap和LRU缓存/</id>
+    <published>2018-11-28T02:14:22.000Z</published>
+    <updated>2018-11-28T02:23:35.677Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://h2pl.github.io/2018/05/11/collection5/" target="_blank" rel="noopener">传送门</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://h2pl.github.io/2018/05/11/collection5/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;传送门&lt;/a&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Java集合详解" scheme="https://soleslie.github.io/categories/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/"/>
+    
+    
+      <category term="Java集合" scheme="https://soleslie.github.io/tags/Java%E9%9B%86%E5%90%88/"/>
+    
+  </entry>
   
   <entry>
     <title>计算机操作系统</title>
@@ -117,18 +193,18 @@
   
   <entry>
     <title>java集合详解4——HashMap和HashTable</title>
-    <link href="https://soleslie.github.io/2018/11/21/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A34/"/>
-    <id>https://soleslie.github.io/2018/11/21/Java集合详解/java集合详解4/</id>
+    <link href="https://soleslie.github.io/2018/11/21/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A34-HashMap%E5%92%8CHashTable/"/>
+    <id>https://soleslie.github.io/2018/11/21/Java集合详解/java集合详解4-HashMap和HashTable/</id>
     <published>2018-11-21T08:54:47.000Z</published>
-    <updated>2018-11-23T01:48:08.705Z</updated>
+    <updated>2018-11-28T02:20:37.084Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://h2pl.github.io/2018/05/10/collection4/" target="_blank" rel="noopener">传送们</a></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="https://h2pl.github.io/2018/05/10/collection4/" target="_blank" rel="noopener">传送门</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;https://h2pl.github.io/2018/05/10/collection4/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;传送们&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&quot;https://h2pl.github.io/2018/05/10/collection4/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;传送门&lt;/a&gt;&lt;/p&gt;
 
       
     
@@ -143,8 +219,8 @@
   
   <entry>
     <title>Java集合详解3——Iterator,fail-fast机制与比较器</title>
-    <link href="https://soleslie.github.io/2018/11/21/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A33/"/>
-    <id>https://soleslie.github.io/2018/11/21/Java集合详解/Java集合详解3/</id>
+    <link href="https://soleslie.github.io/2018/11/21/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A33-Iterator/"/>
+    <id>https://soleslie.github.io/2018/11/21/Java集合详解/Java集合详解3-Iterator/</id>
     <published>2018-11-21T08:30:44.000Z</published>
     <updated>2018-11-21T08:48:25.078Z</updated>
     
@@ -169,8 +245,8 @@
   
   <entry>
     <title>Java集合详解2——LinkedList,Queue</title>
-    <link href="https://soleslie.github.io/2018/11/21/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A32%E2%80%94%E2%80%94LinkedList-Queue/"/>
-    <id>https://soleslie.github.io/2018/11/21/Java集合详解/Java集合详解2——LinkedList-Queue/</id>
+    <link href="https://soleslie.github.io/2018/11/21/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A32-LinkedList-Queue/"/>
+    <id>https://soleslie.github.io/2018/11/21/Java集合详解/Java集合详解2-LinkedList-Queue/</id>
     <published>2018-11-21T07:53:41.000Z</published>
     <updated>2018-11-21T08:45:01.354Z</updated>
     
@@ -192,8 +268,8 @@
   
   <entry>
     <title>Java集合详解1——ArrayList,Vector,Stack</title>
-    <link href="https://soleslie.github.io/2018/11/21/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A31%E2%80%94%E2%80%94ArrayList-Vector-Stack/"/>
-    <id>https://soleslie.github.io/2018/11/21/Java集合详解/Java集合详解1——ArrayList-Vector-Stack/</id>
+    <link href="https://soleslie.github.io/2018/11/21/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A31-ArrayList-Vector-Stack/"/>
+    <id>https://soleslie.github.io/2018/11/21/Java集合详解/Java集合详解1-ArrayList-Vector-Stack/</id>
     <published>2018-11-21T07:05:57.000Z</published>
     <updated>2018-11-21T08:48:19.120Z</updated>
     
